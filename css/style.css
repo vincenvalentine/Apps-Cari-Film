@@ -96,7 +96,7 @@
 }
 .content .content-list-film .content-film .content-film-title {
   font-family: "GothamRounded-Medium";
-  padding: 0.5rem;
+  padding-bottom: 0.5rem;
   max-width: 12rem;
 }
 .content .content-list-film .content-film .content-film-title p {
@@ -107,6 +107,9 @@
   bottom: 0;
   font-family: "GothamRounded-Light";
   cursor: pointer;
+}
+.content .content-list-film .content-film .content-film-btn:hover {
+  color: #38defc;
 }
 
 .popUp {
@@ -120,6 +123,8 @@
   background-color: wheat;
   z-index: 10;
   display: none;
+  overflow-y: scroll;
+  max-height: 100%;
 }
 .popUp .popUp-box {
   border: 1px solid;

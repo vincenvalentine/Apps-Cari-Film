@@ -2,6 +2,7 @@ let btnSearch = document.getElementById('search');
 let inputSearch = document.getElementById('input-search');
 let content = document.getElementById('content');
 let contentFilm = document.getElementById('content-film');
+let popUp = document.getElementById('popUp');
 
 function MovieList() {
     $.ajax({
@@ -147,21 +148,16 @@ function getDataPopup (){
 }
 
 
-function showpopUp (){
-    let popUp = document.getElementById('popUp');
-    
+function showpopUp (){ 
     popUp.style.display = 'block';
     overlay.classList.add('active');
 
-
-  
-
 }
+
 
 function closePopUpBtn (){
     let btnClose = document.getElementById('popUp-btn-close');
-    let popUp = document.getElementById('popUp');
-    console.log(btnClose);
+
 
     // btnClose.addEventListener('click', function(){
         // console.log('here');
