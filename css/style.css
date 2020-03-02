@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "GothamRounded-Bold";
+  src: url("fonts/GothamRounded-Bold.eot");
+  src: url("fonts/GothamRounded-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Bold.woff2") format("woff2"), url("fonts/GothamRounded-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Light";
+  src: url("fonts/GothamRounded-Light.eot");
+  src: url("fonts/GothamRounded-Light.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Light.woff2") format("woff2"), url("fonts/GothamRounded-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Book";
+  src: url("fonts/GothamRounded-Book.eot");
+  src: url("fonts/GothamRounded-Book.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Book.woff2") format("woff2"), url("fonts/GothamRounded-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamRounded-Medium";
+  src: url("fonts/GothamRounded-Medium.eot");
+  src: url("fonts/GothamRounded-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/GothamRounded-Medium.woff2") format("woff2"), url("fonts/GothamRounded-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  font-family: "GothamRounded-Bold";
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header .header-title {
+  font-family: "GothamRounded-Bold";
+  padding: 1rem;
+}
+.header .header-searchbar input {
+  height: 2rem;
+  border: 1px solid;
+  padding-left: 0.5rem;
+  font-family: "GothamRounded-Medium";
+  color: grey;
+}
+.header .header-searchbar button {
+  height: 2rem;
+  font-family: "GothamRounded-Light";
+}
+
+.content {
+  padding: 1rem;
+}
+.content .content-title {
+  border-top: 1px solid grey;
+  font-family: "GothamRounded-Book";
+  padding-top: 0.5rem;
+}
+.content .content-list-film {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.content .content-list-film .content-film {
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid;
+}
+.content .content-list-film .content-film .content-film-title {
+  font-family: "GothamRounded-Medium";
+  padding: 0.5rem;
+}
+.content .content-list-film .content-film .content-film-img {
+  max-width: 100%;
+}
+.content .content-list-film .content-film .content-film-img img {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+.content .content-list-film .content-film .content-film-btn {
+  text-align: right;
+  font-family: "GothamRounded-Bold";
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+@import "fonts";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    font-family: 'GothamRounded-Bold';
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .header-title{
+        font-family: 'GothamRounded-Bold';
+        padding: 1rem;
+    }
+    .header-searchbar{
+        input{
+            height: 2rem;
+            border: 1px solid;
+            padding-left: 0.5rem;
+            font-family:'GothamRounded-Medium';
+            color: grey;
+        }
+        button{
+            height: 2rem;
+            font-family:'GothamRounded-Light';
+        }
+    }
+}
+
+.content{
+    padding: 1rem;
+    
+    .content-title{
+        border-top: 1px solid grey;
+        font-family:'GothamRounded-Book';
+        padding-top: 0.5rem;
+    }
+    .content-list-film{
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        .content-film{
+            padding: 1rem;
+            margin: 1rem;
+            border: 1px solid;
+            // width: 25%;
+            .content-film-title{
+                font-family:'GothamRounded-Medium';
+                padding: 0.5rem;
+            }
+            .content-film-img{
+                max-width: 100%;
+               img{
+                width: 15rem;
+                height: 15rem;
+                object-fit: cover;
+               }
+
+            }
+            .content-film-btn{
+                text-align: right;
+                font-family:'GothamRounded-Bold';
+                cursor: pointer;
+            }
+        }
+    }
+}
