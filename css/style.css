@@ -46,23 +46,36 @@
   font-family: "GothamRounded-Bold";
   padding: 1rem;
 }
+.header .header-searchbar {
+  margin-bottom: 1rem;
+}
 .header .header-searchbar input {
   height: 2rem;
   border: 1px solid;
   padding-left: 0.5rem;
   font-family: "GothamRounded-Medium";
   color: grey;
+  margin-right: -0.1rem;
+  width: 20rem;
 }
 .header .header-searchbar button {
   height: 2rem;
   font-family: "GothamRounded-Light";
+  border-radius: 10%;
+}
+.header .header-searchbar button:hover {
+  background-color: grey;
+}
+@media only screen and (max-width: 411px) {
+  .header .header-searchbar input {
+    width: 70%;
+  }
 }
 
 .content {
   padding: 1rem;
 }
 .content .content-title {
-  border-top: 1px solid grey;
   font-family: "GothamRounded-Book";
   padding-top: 0.5rem;
 }
@@ -76,21 +89,19 @@
   margin: 1rem;
   border: 1px solid;
 }
+.content .content-list-film .content-film .content-film-img img {
+  max-width: 100%;
+}
 .content .content-list-film .content-film .content-film-title {
   font-family: "GothamRounded-Medium";
   padding: 0.5rem;
+  max-width: 12rem;
 }
-.content .content-list-film .content-film .content-film-img {
-  max-width: 100%;
-}
-.content .content-list-film .content-film .content-film-img img {
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
+.content .content-list-film .content-film .content-film-title p {
+  font-family: "GothamRounded-Light";
 }
 .content .content-list-film .content-film .content-film-btn {
-  text-align: right;
-  font-family: "GothamRounded-Bold";
+  font-family: "GothamRounded-Light";
   cursor: pointer;
 }
 

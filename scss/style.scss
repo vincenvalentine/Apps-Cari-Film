@@ -20,16 +20,30 @@
         padding: 1rem;
     }
     .header-searchbar{
+        margin-bottom: 1rem;
         input{
             height: 2rem;
             border: 1px solid;
             padding-left: 0.5rem;
             font-family:'GothamRounded-Medium';
             color: grey;
+            margin-right: -0.1rem;
+            width: 20rem;
         }
+
         button{
             height: 2rem;
             font-family:'GothamRounded-Light';
+            border-radius: 10%;
+        }
+        button:hover{
+            background-color: grey;
+        }
+
+        @media only screen and (max-width: 411px) {
+            input{
+                width : 70%;
+            }
         }
     }
 }
@@ -38,7 +52,6 @@
     padding: 1rem;
     
     .content-title{
-        border-top: 1px solid grey;
         font-family:'GothamRounded-Book';
         padding-top: 0.5rem;
     }
@@ -51,22 +64,23 @@
             margin: 1rem;
             border: 1px solid;
             // width: 25%;
-            .content-film-title{
-                font-family:'GothamRounded-Medium';
-                padding: 0.5rem;
-            }
             .content-film-img{
-                max-width: 100%;
                img{
-                width: 15rem;
-                height: 15rem;
-                object-fit: cover;
+                   max-width: 100%;
                }
 
             }
+            .content-film-title{
+                font-family:'GothamRounded-Medium';
+                padding: 0.5rem;
+                max-width: 12rem;
+                p{
+                    font-family:'GothamRounded-Light';
+                }
+            }
             .content-film-btn{
-                text-align: right;
-                font-family:'GothamRounded-Bold';
+              
+                font-family:'GothamRounded-Light';
                 cursor: pointer;
             }
         }
