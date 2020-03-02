@@ -47,8 +47,7 @@ function MovieList() {
 
 
             } else {
-                content.innerHTML = `<h2 class="error">${result.Error}</h2>`;
-
+                contentFilm.innerHTML = `<h2 class="error">${result.Error}</h2>`;
             }
             console.log(result);
 
@@ -61,7 +60,6 @@ function searchMovie() {
     btnSearch.addEventListener('click', function () {
         
         MovieList();
-        // window.location.reload();
     })
 
     inputSearch.onkeyup = function(e){
@@ -71,8 +69,6 @@ function searchMovie() {
         
     }
 }
-
-
 
 
 
